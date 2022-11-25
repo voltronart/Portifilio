@@ -1,0 +1,77 @@
+*{
+    
+}
+body{
+  
+    text-align: center;
+    background-image:url('Fundo.png') ;
+        
+}
+.grade{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgba(100, 0, 100,0.8);
+    border-radius: 50px 20px 50px 60px;
+}
+.GAME img{
+    margin-top: 50px ;
+        
+}
+.End {
+    display: flex;
+    flex-wrap: wrap;
+    border: dashed white;
+    
+    justify-content: center;
+    border-radius: 50px 20px 50px 60px;
+    background-color: rgba(100, 0, 100,0.8);
+ 
+}
+h1,h2,p{
+font-family: Indted
+}
+.start{
+    background-color: purple;
+    background-color: rgba(100, 0, 100,0.8);
+  
+}
+  @font-face {
+    font-family: Indted;
+    src: url(Indited.ttf);
+  }
+.GAME{
+    position: relative;
+}
+.GAME p {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.GAME:hover p {
+    opacity: 1;
+    font-size: 33px;    
+    transition:1s ;
+}
+.GAME:hover img {
+    opacity: 0.5;
+    
+    transition:2.5s ;
+}
+.LOGO img{
+    border-radius: 1000px ;
+    
+}
+.LOGO:hover img{
+animation:PIRATE 6s  infinite alternate ;
+}
+@keyframes PIRATE {
+  from{
+  transform:rotate(0deg) ;
+  }to{
+   
+    transform:rotate(360deg) ;
+  }
+}
